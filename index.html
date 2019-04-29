@@ -1,0 +1,21 @@
+<html>
+<head>
+<title>vCard VCF Maurizio</title>
+<script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script>
+$(function() {
+$('a[data-auto-download]').each(function(){
+var $this = $(this);
+setTimeout(function() {
+window.location = $this.attr('href');
+}, 200);
+});
+});
+</script>
+</head>
+<body>
+<div class="wrapper">
+<a data-auto-download href="data:text/vcard;filename=John%20Doe.vcf;charset=utf-8,BEGIN%3AVCARD%0AVERSION%3A3.0%0AN%3APacialat%3BMaurizio%3B%3B%3B%0AFN%3AMaurizio%20Pacialat%0AORG%3AFINCANTIERI%20S.p.A.%3B%0ATITLE%3ADigital%20Brand%20Protection%0AEMAIL%3Btype%3DINTERNET%3Btype%3DWORK%3Btype%3Dpref%3Amaurizio.pacialat%40fincantieri.it%0ATEL%3Btype%3DWORK%3Btype%3Dpref%3A%2B390403193616%0ATEL%3Btype%3DWORK%3A%2B393443821109%0Aitem3.X-ABLabel%3A_%24!%3CHomePage%3E!%24_%0Aitem4.URL%3Ahttps%3A%2F%2Fwww.fincantieri.com%0Aitem4.X-ABLabel%3AFOAF%0Aitem5.X-ABRELATEDNAMES%3Btype%3Dpref%3AJane%20Doe%0Aitem5.X-ABLabel%3A_%24!%3CFriend%3E!%24_%0ACATEGORIES%3AWork%2CTest%20group%0AX-ABUID%3A5AD380FD-B2DE-4261-BA99-DE1D1DB52FBE%3AABPerson%0AEND%3AVCARD%0A"></a></p>
+</div>
+</body>
+</html>
